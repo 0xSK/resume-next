@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./inter-display";
+@import "./inter";
+@import "./rajdhani";
+@import "./space-grotesk";
+@import "./space-mono";
+
+body {
+    @apply m-12;
+}
