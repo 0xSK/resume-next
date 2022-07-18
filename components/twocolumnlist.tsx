@@ -14,41 +14,41 @@ const TwoColumnList = ({
   style = {},
 }: TwoColumnListProps): JSX.Element => {
   return (
-    <div className={`${className} ${styles.sectionContent}`} style={style}>
-      <div className={styles.twoColumnGrid}>
+    <div className={`section-content ${className}`} style={style}>
+      <div className="two-column-grid">
         {entries.map((entry, index) => (
           <>
             <div key={index + "0"} className="col-span-1">
               {entry.title &&
                 (typeof entry.title === "string" ? (
-                  <p className={styles.title}>{entry.title}</p>
+                  <p className="title">{entry.title}</p>
                 ) : (
                   entry.title
                 ))}
               {entry.metaDescription && (
                 <FlexParagraph
                   flexParagraph={entry.metaDescription}
-                  paragraphClassName={styles.metaDescription}
+                  paragraphClassName="metaDescription"
                 />
               )}
               {entry.locationTime && (
                 <FlexParagraph
                   flexParagraph={entry.locationTime}
-                  paragraphClassName={styles.locationTime}
+                  paragraphClassName="locationTime"
                 />
               )}
             </div>
             <div key={index + "1"} className="col-span-1">
               {entry.subtitle &&
                 (typeof entry.subtitle === "string" ? (
-                  <p className={styles.subtitle}>{entry.subtitle}</p>
+                  <p className="subtitle">{entry.subtitle}</p>
                 ) : (
                   entry.subtitle
                 ))}
               {entry.description && (
                 <FlexParagraph
                   flexParagraph={entry.description}
-                  paragraphClassName={styles.description}
+                  paragraphClassName="description"
                 />
               )}
             </div>

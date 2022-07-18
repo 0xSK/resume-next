@@ -14,19 +14,19 @@ const OneColumnList = ({
   style,
 }: OneColumnListProps): JSX.Element => {
   return (
-    <div className={`${className} ${styles.sectionContent}`} style={style}>
+    <div className={`section-content ${className}`} style={style}>
       {entries.map((entry, index) => (
-        <div key={index} className={styles.oneColumnItem}>
+        <div key={index} className="one-column-item">
           {entry.title &&
             (typeof entry.title === "string" ? (
-              <p className={styles.title}>{entry.title}</p>
+              <p className="title">{entry.title}</p>
             ) : (
               entry.title
             ))}
 
           {entry.subtitle &&
             (typeof entry.subtitle === "string" ? (
-              <p className={styles.subtitle}>{entry.subtitle}</p>
+              <p className="subtitle">{entry.subtitle}</p>
             ) : (
               entry.subtitle
             ))}
@@ -34,21 +34,21 @@ const OneColumnList = ({
           {entry.description && (
             <FlexParagraph
               flexParagraph={entry.description}
-              paragraphClassName={styles.description}
+              paragraphClassName="description"
             />
           )}
 
           {entry.metaDescription && (
             <FlexParagraph
               flexParagraph={entry.metaDescription}
-              paragraphClassName={styles.metaDescription}
+              paragraphClassName="metaDescription"
             />
           )}
 
           {entry.locationTime && (
             <FlexParagraph
               flexParagraph={entry.locationTime}
-              paragraphClassName={styles.locationTime}
+              paragraphClassName="locationTime"
             />
           )}
         </div>

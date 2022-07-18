@@ -17,7 +17,7 @@ export const skillsData: ResumeEntry[] = [
   {
     title: "Miscellaneous",
     description: [
-      "User Interface Design (UI/UX), Photo Editing, DIY Repair",
+      "User Interface Design (UI/UX), DIY Repair",
       "Photoshop, InDesign, Sketch, Figma",
     ],
   },

@@ -22,7 +22,7 @@ const ResumeSection = ({
   sectionHeaderClassName = "",
 }: ResumeSectionProps): JSX.Element => {
   return (
-    <div className={`${styles.section} ${className}`}>
+    <div className={`section ${className}`}>
       <SectionHeader title={title} hr={hr} className={sectionHeaderClassName} />
       {
         {

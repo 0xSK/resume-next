@@ -12,7 +12,7 @@ const SectionHeader = ({
   className = "",
 }: SectionHeaderProps): JSX.Element => {
   return (
-    <div className={`${styles.sectionHeader} ${className}`}>
+    <div className={`section-header ${className}`}>
       <h2>{title}</h2>
       {hr && <hr />}
     </div>

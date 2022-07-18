@@ -1,3 +1,4 @@
+import styles from "../styles/knobs.module.scss";
 import { contactData } from "../data/contact";
 
 type ContactProps = {
@@ -10,7 +11,7 @@ const Contact = ({
   align = "right",
 }: ContactProps): JSX.Element => {
   return (
-    <div className={`${className}`}>
+    <div className={`contact ${className}`}>
       {contactData.map((contactItem, index) => (
         <p
           key={index}
@@ -19,13 +20,15 @@ const Contact = ({
         `}
         >
           {align === "left" && (
-            <span className="text-xs">{contactItem.icon} </span>
+            <span className="icon left">{contactItem.icon} </span>
           )}
-          <a href={contactItem.url} target="_blank" rel="noopener noreferrer">
-            {contactItem.text}
-          </a>
+          <span className="text">
+            <a href={contactItem.url} target="_blank" rel="noopener noreferrer">
+              {contactItem.text}
+            </a>
+          </span>
           {align === "right" && (
-            <span className="text-xs"> {contactItem.icon}</span>
+            <span className="icon right"> {contactItem.icon}</span>
           )}
         </p>
       ))}
