@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <div className="col-span-1">
           <WorkExperience type="TwoColumn" />
           <AcademicExperience type="TwoColumn" />
-          <Projects type="OneColumn" />
+          <Projects type="TwoColumn" />
         </div>
         <div className="col-span-1 h-full relative">
           <EducationAlt type="OneColumn" />

@@ -12,9 +12,19 @@ export const educationData: ResumeEntry[] = [
 
 export const educationDataAlt: ResumeEntry[] = [
   {
-    title: "University of Illinois at Urbana-Champaign",
-    subtitle: "B.Sc. in Computer Engineering · Art & Design Minor · 3.32 GPA",
-    description:[
+    title: (
+      <p className="title">
+        University of Illinois at <br /> Urbana-Champaign
+      </p>
+    ),
+    subtitle: (
+      <p className="subtitle">
+        B.Sc. in Computer Engineering <br />
+        Art & Design Minor <br />
+        3.32 GPA
+      </p>
+    ),
+    description: [
       "Selected Coursework:",
       "Computer Organization & Design",
       "Parallel Computer Architecture",

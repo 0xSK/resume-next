@@ -7,6 +7,7 @@ import {
   Projects,
   AcademicExperience,
   Skills,
+  SkillsAlt,
 } from "../components/sections";
 import Name from "../components/name";
 
@@ -27,7 +28,7 @@ const Home: NextPage = () => {
         </div>
         <div className="col-span-1">
           <EducationAlt type="OneColumn" />
-          <Skills type="OneColumn" />
+          <SkillsAlt type="OneColumn" />
         </div>
       </div>
     </>

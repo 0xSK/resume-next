@@ -10,8 +10,17 @@ export const contactData: ContactEntry[] = [
     text: "linkedin.com/in/0xsk",
     icon: (
       <span className="fa-stack">
-        <i className="fas fa-square fa-stack-2x fa-inverse" />
-        <i className="fab fa-linkedin fa-stack-2x" />
+        {/* <i className="fas fa-square fa-stack-2x fa-inverse" />
+        <i className="fab fa-linkedin fa-stack-2x" style={{
+            transform: "scale(0.9)",
+          }} /> */}
+        <i className="fas fa-square fa-stack-2x" />
+        <i
+          className="fab fa-linkedin-in fa-stack-1x fa-inverse"
+          style={{
+            transform: "scale(1.1)",
+          }}
+        />
       </span>
     ),
   },
@@ -21,7 +30,12 @@ export const contactData: ContactEntry[] = [
     icon: (
       <span className="fa-stack">
         <i className="fas fa-square fa-stack-2x" />
-        <i className="fab fa-github fa-stack-1x fa-inverse" />
+        <i
+          className="fab fa-github fa-stack-1x fa-inverse"
+          style={{
+            transform: "scale(1.2)",
+          }}
+        />
       </span>
     ),
   },
@@ -41,7 +55,7 @@ export const contactData: ContactEntry[] = [
     icon: (
       <span className="fa-stack">
         <i className="fas fa-square fa-stack-2x" />
-        <i className="fas fa-envelope fa-stack-1x fa-inverse" />
+        <i className="fas fa-paper-plane fa-stack-1x fa-inverse" />
       </span>
     ),
   },
@@ -51,7 +65,7 @@ export const contactData: ContactEntry[] = [
     icon: (
       <span className="fa-stack">
         <i className="fas fa-square fa-stack-2x" />
-        <i className="fa fa-globe fa-stack-1x fa-inverse" />
+        <i className="fab fa-internet-explorer fa-stack-1x fa-inverse" />
       </span>
     ),
   },
