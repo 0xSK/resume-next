@@ -13,7 +13,7 @@ body {
 }
 
 .name {
-  @apply font-header font-extrabold text-6xl tracking-tighter;
+  @apply font-header font-extrabold text-7xl tracking-tighter;
   //   @apply underline underline-offset-8;
   .middot {
     @apply font-normal;
@@ -29,10 +29,10 @@ body {
   .icon {
     @apply text-xs;
     &.left {
-      @apply mr-2;
+      @apply mr-1;
     }
     &.right {
-      @apply ml-2;
+      @apply ml-1;
     }
     .fa-stack {
       @apply transform -translate-y-[0.15em];

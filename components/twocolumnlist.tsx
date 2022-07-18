@@ -18,7 +18,7 @@ const TwoColumnList = ({
       <div className="two-column-grid">
         {entries.map((entry, index) => (
           <>
-            <div key={index + "0"} className="col-span-1">
+            <div key={index + "a"} className="col-span-1">
               {entry.title &&
                 (typeof entry.title === "string" ? (
                   <p className="title">{entry.title}</p>
@@ -38,7 +38,7 @@ const TwoColumnList = ({
                 />
               )}
             </div>
-            <div key={index + "1"} className="col-span-1">
+            <div key={index + "b"} className="col-span-1">
               {entry.subtitle &&
                 (typeof entry.subtitle === "string" ? (
                   <p className="subtitle">{entry.subtitle}</p>

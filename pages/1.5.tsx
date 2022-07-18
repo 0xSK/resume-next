@@ -1,34 +1,37 @@
 import type { NextPage } from "next";
-import Contact from "../../components/contact";
+import Contact from "../components/contact";
 import {
   Education,
+  EducationAlt,
   WorkExperience,
   Projects,
   AcademicExperience,
   Skills,
-} from "../../components/sections";
-import Name from "../../components/name";
+} from "../components/sections";
+import Name from "../components/name";
 
 const Home: NextPage = () => {
   return (
     <>
-      <div className="grid grid-cols-[3fr_1fr] gap-x-12">
+      <div className="grid grid-cols-[3fr_1fr]">
         <div className="col-span-1">
           <Name hindi />
         </div>
         <div className="col-span-1">
-          <Contact className="h-12" align="left" />
+          <Contact className="h-12" />
+        </div>
+      </div>
+      <div className="grid grid-cols-[2fr_2fr]">
+        <div className="col-span-1">
+          <EducationAlt type="OneColumn" />
         </div>
         <div className="col-span-1">
-          <WorkExperience type="TwoColumn" />
-          <AcademicExperience type="TwoColumn" />
-          <Projects type="OneColumn" />
-        </div>
-        <div className="col-span-1">
-          <Education type="OneColumn" />
           <Skills type="OneColumn" />
         </div>
       </div>
+      <WorkExperience type="TwoColumn" />
+      <Projects type="OneColumn" />
+      <AcademicExperience type="TwoColumn" />
     </>
   );
 };

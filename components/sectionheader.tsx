@@ -2,13 +2,13 @@ import styles from "../styles/knobs.module.scss";
 
 type SectionHeaderProps = {
   title: string;
-  hr: boolean;
+  hr?: boolean;
   className?: string;
 };
 
 const SectionHeader = ({
   title,
-  hr,
+  hr = true,
   className = "",
 }: SectionHeaderProps): JSX.Element => {
   return (

@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
-import Contact from "../../components/contact";
+import Contact from "../components/contact";
 import {
   Education,
   WorkExperience,
   Projects,
   AcademicExperience,
   Skills,
-} from "../../components/sections";
-import Name from "../../components/name";
+} from "../components/sections";
+import Name from "../components/name";
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           <Name hindi/>
         </div>
         <div className="col-span-1">
-          <Contact />
+          <Contact className="h-12"/>
         </div>
       </div>
       <Education type="OneColumn" />
