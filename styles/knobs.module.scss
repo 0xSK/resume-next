@@ -1,0 +1,44 @@
+.title {
+  @apply font-sans font-bold text-3xl;
+}
+
+.subtitle {
+  @apply font-sans font-bold text-2xl;
+}
+
+.description {
+  @apply font-sans font-normal text-xl;
+}
+
+.metaDescription {
+  @apply font-sans font-normal text-base;
+}
+
+.locationTime {
+  @apply font-sans font-thin text-base;
+}
+
+.oneColumnItem {
+  @apply my-10;
+}
+
+.twoColumnGrid {
+  @apply grid grid-cols-[32ch_1fr] gap-x-4 gap-y-20
+}
+
+.section {
+  @apply my-10;
+}
+
+.sectionHeader {
+  h2 {
+    @apply text-4xl lowercase font-display font-bold;
+  }
+  hr {
+    @apply w-full border-b-2 border-gray-300;
+  }
+}
+
+.sectionContent {
+
+}

@@ -1,32 +1,32 @@
-import textStyles from "../styles/text.module.scss";
+import styles from "../styles/knobs.module.scss";
 import type { ResumeEntry } from "./resumeentry";
 import FlexParagraph from "./flexparagraph";
 
-type ParagraphListProps = {
+type OneColumnListProps = {
   entries: ResumeEntry[];
   className?: string;
   style?: React.CSSProperties;
 };
 
-export const ParagraphList = ({
+const OneColumnList = ({
   entries,
-  className,
+  className = "",
   style,
-}: ParagraphListProps): JSX.Element => {
+}: OneColumnListProps): JSX.Element => {
   return (
-    <div className={`${className}`} style={style}>
+    <div className={`${className} ${styles.sectionContent}`} style={style}>
       {entries.map((entry, index) => (
-        <div key={index} className="my-10">
+        <div key={index} className={styles.oneColumnItem}>
           {entry.title &&
             (typeof entry.title === "string" ? (
-              <p className={textStyles.title}>{entry.title}</p>
+              <p className={styles.title}>{entry.title}</p>
             ) : (
               entry.title
             ))}
 
           {entry.subtitle &&
             (typeof entry.subtitle === "string" ? (
-              <p className={textStyles.subtitle}>{entry.subtitle}</p>
+              <p className={styles.subtitle}>{entry.subtitle}</p>
             ) : (
               entry.subtitle
             ))}
@@ -34,21 +34,21 @@ export const ParagraphList = ({
           {entry.description && (
             <FlexParagraph
               flexParagraph={entry.description}
-              paragraphClassName={textStyles.description}
+              paragraphClassName={styles.description}
             />
           )}
 
           {entry.metaDescription && (
             <FlexParagraph
               flexParagraph={entry.metaDescription}
-              paragraphClassName={textStyles.metaDescription}
+              paragraphClassName={styles.metaDescription}
             />
           )}
 
           {entry.locationTime && (
             <FlexParagraph
               flexParagraph={entry.locationTime}
-              paragraphClassName={textStyles.locationTime}
+              paragraphClassName={styles.locationTime}
             />
           )}
         </div>
@@ -56,3 +56,5 @@ export const ParagraphList = ({
     </div>
   );
 };
+
+export default OneColumnList;

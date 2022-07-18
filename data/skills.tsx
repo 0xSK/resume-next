@@ -1,6 +1,6 @@
 import type { ResumeEntry } from "../components/resumeentry";
 
-const skillsData: ResumeEntry[] = [
+export const skillsData: ResumeEntry[] = [
   {
     title: "Electrical & Computer Engineering",
     description: [

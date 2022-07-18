@@ -1,11 +1,24 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
+import Contact from "../components/contact";
+import {
+  Education,
+  WorkExperience,
+  Projects,
+  AcademicExperience,
+  Skills,
+} from "../components/sections";
 
 const Home: NextPage = () => {
   return (
-    <h1 className="text-3xl font-bold">
-      Hello world!
-    </h1>
-  )
-}
+    <>
+      <Contact />
+      <Education type="OneColumn" />
+      <WorkExperience type="TwoColumn" />
+      <Projects type="OneColumn" />
+      <AcademicExperience type="TwoColumn" />
+      <Skills type="OneColumn" />
+    </>
+  );
+};
 
-export default Home
+export default Home;
