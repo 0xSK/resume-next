@@ -14,7 +14,7 @@ body {
 
 .name {
   @apply font-header font-extrabold text-6xl tracking-tighter;
-//   @apply underline underline-offset-8;
+  //   @apply underline underline-offset-8;
   .middot {
     @apply font-normal;
   }
@@ -25,9 +25,15 @@ body {
 
 .contact {
   @apply font-sans font-medium text-base tracking-tight;
-  @apply h-12;
+  //   @apply h-12;
   .icon {
-    @apply ml-1 text-xs;
+    @apply text-xs;
+    &.left {
+      @apply mr-2;
+    }
+    &.right {
+      @apply ml-2;
+    }
     .fa-stack {
       @apply transform -translate-y-[0.15em];
     }
@@ -48,22 +54,22 @@ body {
   .section-content {
     // @apply my-10;
     p {
-        @apply my-0;
-        &.title {
-          @apply font-sans font-semibold text-lg leading-tight;
-        }
-        &.subtitle {
-          @apply font-sans font-semibold text-lg leading-tight;
-        }
-        &.description {
-          @apply font-sans font-normal text-base leading-tight;
-        }
-        &.metaDescription {
-          @apply font-sans font-normal text-base leading-tight;
-        }
-        &.locationTime {
-          @apply font-sans font-light text-sm leading-tight;
-        }
+      @apply my-0;
+      &.title {
+        @apply font-sans font-semibold text-lg leading-tight;
+      }
+      &.subtitle {
+        @apply font-sans font-semibold text-base leading-tight;
+      }
+      &.description {
+        @apply font-sans font-normal text-base leading-tight;
+      }
+      &.metaDescription {
+        @apply font-sans font-normal text-base leading-tight;
+      }
+      &.locationTime {
+        @apply font-sans font-light text-sm leading-tight;
+      }
     }
     .one-column-item {
       @apply my-4;

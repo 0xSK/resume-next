@@ -1,32 +1,36 @@
-import type { NextPage } from "next";
-import Contact from "../components/contact";
-import {
-  Education,
-  WorkExperience,
-  Projects,
-  AcademicExperience,
-  Skills,
-} from "../components/sections";
-import Name from "../components/name";
+// basic page that shows a list of all the resumes in the `resumes` folder as cards
+import path from "path";
 
-const Home: NextPage = () => {
+type IndexProps = {
+  resumes: string[];
+};
+
+export async function getStaticProps() {
+  const fs = require("fs");
+  const resumes = fs.readdirSync("pages/resumes");
+  return {
+    props: {
+      resumes,
+    },
+  };
+}
+
+const Index = ({ resumes }: IndexProps) => {
   return (
-    <>
-      <div className="grid grid-cols-[3fr_1fr]">
-        <div className="col-span-1">
-          <Name hindi/>
-        </div>
-        <div className="col-span-1">
-          <Contact />
-        </div>
+    <div className="index">
+      <h1>Resumes</h1>
+      <div className="resumes">
+        {resumes &&
+          resumes.map((resume, index) => (
+            <div key={index} className="resume">
+              <a href={`/resumes/${resume.replace(".tsx", "")}`}>
+                {resume.replace(".tsx", "")}
+              </a>
+            </div>
+          ))}
       </div>
-      <Education type="OneColumn" />
-      <WorkExperience type="TwoColumn" />
-      <Projects type="OneColumn" />
-      <AcademicExperience type="TwoColumn" />
-      <Skills type="OneColumn" />
-    </>
+    </div>
   );
 };
 
-export default Home;
+export default Index;
