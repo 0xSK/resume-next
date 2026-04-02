@@ -4,9 +4,9 @@ export const skillsData: ResumeEntry[] = [
   {
     title: "Hardware & Software",
     description: [
-      "C & C++, Python, Tcl, SystemVerilog, HTML, CSS, JavaScript / Typescript, React, Docker",
+      "C & C++, Python, Tcl, SystemVerilog, HTML, CSS, JavaScript / TypeScript, React, Docker, Ansible",
       "SoC Design, RTL & High-Level Synthesis",
-      "Server Administration, Scripting, Software Optimization, Full Stack Development",
+      "Server Administration, Scripting, Software Optimization, Full-Stack Development",
     ],
   },
   {
