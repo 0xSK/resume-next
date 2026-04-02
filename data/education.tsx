@@ -41,3 +41,22 @@ export const educationDataAlt: ResumeEntry[] = [
     locationTime: "Fall 2017 – May 2022",
   },
 ];
+
+export const publicationsData: ResumeEntry[] = [
+  {
+    description: (
+      <p className="description">
+        <a href="https://dl.acm.org/doi/10.1145/3470496.3527396">
+          N. Bleier, M. H. Mubarik, S. Chakraborty, S. Kishore, and R. Kumar,
+          {" "}
+          "Rethinking programmable earable processors," in{" "}
+          <i>
+            Proceedings of the 49th Annual International Symposium on Computer
+            Architecture
+          </i>
+          , 2022.
+        </a>
+      </p>
+    ),
+  },
+];

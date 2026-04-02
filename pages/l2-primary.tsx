@@ -8,7 +8,7 @@ import {
 import Name from "../components/name";
 import SectionHeader from "../components/sectionheader";
 import OneColumnList from "../components/onecolumnlist";
-import { educationData } from "../data/education";
+import { educationData, publicationsData } from "../data/education";
 // import { awardsData } from "../data/awards";
 
 const Home: NextPage = () => {
@@ -30,6 +30,10 @@ const Home: NextPage = () => {
           <OneColumnList entries={educationData} />
           {/* <h3>Awards & Recognition</h3>
           <OneColumnList entries={awardsData} /> */}
+        </div>
+        <div className="section-subsection">
+          <h3>publications</h3>
+          <OneColumnList entries={publicationsData} />
         </div>
       </div>
       {/* <Projects type="OneColumn" /> */}

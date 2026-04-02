@@ -1,5 +1,11 @@
+import OneColumnList from "./onecolumnlist";
+import SectionHeader from "./sectionheader";
 import ResumeSection from "./resumesection";
-import { educationData, educationDataAlt } from "../data/education";
+import {
+  educationData,
+  educationDataAlt,
+  publicationsData,
+} from "../data/education";
 import { workExperienceData } from "../data/workexperience";
 import { projectsData } from "../data/projects";
 import { academicExperienceData } from "../data/academicexperience";
@@ -11,13 +17,27 @@ type SectionProps = {
 
 const Education = ({ type }: SectionProps): JSX.Element => {
   return (
-    <ResumeSection title="Education" entries={educationData} type={type} />
+    <div className="section">
+      <SectionHeader title="Education" />
+      <OneColumnList entries={educationData} />
+      <div className="section-subsection">
+        <h3>publications</h3>
+        <OneColumnList entries={publicationsData} />
+      </div>
+    </div>
   );
 };
 
 const EducationAlt = ({ type }: SectionProps): JSX.Element => {
   return (
-    <ResumeSection title="Education" entries={educationDataAlt} type={type} />
+    <div className="section">
+      <SectionHeader title="Education" />
+      <OneColumnList entries={educationDataAlt} />
+      <div className="section-subsection">
+        <h3>publications</h3>
+        <OneColumnList entries={publicationsData} />
+      </div>
+    </div>
   );
 };
 
