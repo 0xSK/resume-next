@@ -11,7 +11,7 @@ export const workExperienceData: ResumeEntry[] = [
       "Reduced RTL integration time by ~10×, replacing workflows that traditionally required 25+ engineers with a scalable, programmatic, and correct-by-construction approach.",
       "Scaled the project from a solo effort to a 7-engineer team, expanding its scope to enable additional automation flows across design and verification teams.",
     ],
-    locationTime: "Oct 2022 – Now",
+    locationTime: ["Oct 2022 – Now", "Portland, OR"],
   },
   {
     title: "",
@@ -31,7 +31,7 @@ export const workExperienceData: ResumeEntry[] = [
       "Reduced turnaround time for performance analysis and microarchitectural validation by eliminating the need for full workload simulation.",
       "Extended simulator correctness to support JIT and self-modifying code by handling dynamic instruction updates within the trace pipeline",
     ],
-    locationTime: "May 2021 – August 2021",
+    locationTime: ["May 2021 – August 2021", "Cupertino, CA"]
   },
   // {
   //   title: "Synchrony",
@@ -48,7 +48,7 @@ export const workExperienceData: ResumeEntry[] = [
     description: [
       "Created GUI tools that parse and visualize advanced SoC scan-dump traces for data-driven discovery and debugging.",
     ],
-    locationTime: "May 2020 – August 2020",
+    locationTime: ["May 2020 – August 2020", "Remote"]
   },
   // {
   //   title: "Synchrony",
