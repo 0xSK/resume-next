@@ -1,6 +1,4 @@
-import styles from "../styles/knobs.module.scss";
 import { contactData } from "../data/contact";
-import { ResumeEntry } from "./resumeentry";
 
 type ContactProps = {
   className?: string;
@@ -13,15 +11,11 @@ const Contact = ({
   align = "right",
   reverse = false,
 }: ContactProps): JSX.Element => {
-  if (reverse) {
-    var contactDataOrdered = contactData.slice().reverse();
-  }
-  else {
-    var contactDataOrdered = contactData;
-  }
+  const contactItems = reverse ? [...contactData].reverse() : contactData;
+
   return (
     <div className={`contact ${className}`}>
-      {contactDataOrdered.map((contactItem, index) => (
+      {contactItems.map((contactItem, index) => (
         <p
           key={index}
           className={`

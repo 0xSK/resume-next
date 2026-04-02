@@ -1,4 +1,4 @@
-import { ResumeEntry } from "../components/resumeentry";
+import type { ResumeEntry } from "../components/resumeentry";
 
 export const workExperienceData: ResumeEntry[] = [
   {
@@ -29,19 +29,10 @@ export const workExperienceData: ResumeEntry[] = [
     description: [
       "Added checkpoint-based execution support for a C++ CPU simulator, enabling simulation from checkpoints collected from real silicon.",
       "Reduced turnaround time for performance analysis and microarchitectural validation by eliminating the need for full workload simulation.",
-      "Extended simulator correctness to support JIT and self-modifying code by handling dynamic instruction updates within the trace pipeline",
+      "Extended simulator correctness to support JIT and self-modifying code by handling dynamic instruction updates within the trace pipeline.",
     ],
-    locationTime: ["May 2021 – August 2021", "Cupertino, CA"]
+    locationTime: ["May 2021 – August 2021", "Cupertino, CA"],
   },
-  // {
-  //   title: "Synchrony",
-  //   subtitle: "UI/UX Design Intern",
-  //   description: [
-  //     "Worked on redesigning Synchrony's eService platform for credit card users.",
-  //     "Conducted user surveys and implemented a data-driven approach for design thinking.",
-  //   ],
-  //   locationTime: "August 2020 – May 2021",
-  // },
   {
     title: "Apple",
     subtitle: "Silicon Validation Intern",
@@ -49,17 +40,8 @@ export const workExperienceData: ResumeEntry[] = [
       "Created GUI tools that parse and visualize advanced SoC scan-dump traces for data-driven discovery and debugging.",
       "Enabled efficient root-cause analysis by identifying outliers in request-reponse trace data.",
     ],
-    locationTime: ["May 2020 – August 2020", "Remote"]
+    locationTime: ["May 2020 – August 2020", "Remote"],
   },
-  // {
-  //   title: "Synchrony",
-  //   subtitle: "VUI Design Intern",
-  //   description: [
-  //     "Worked on redesigning Synchrony's Alexa Skill for the Amazon Store Card.",
-  //     "Conducted user interviews and implemented design changes based on the feedback.",
-  //   ],
-  //   locationTime: ["August 2019 – May 2020", "Champaign, IL"],
-  // },
   {
     title: "Google",
     subtitle: "Software Engineering Intern",
@@ -69,13 +51,4 @@ export const workExperienceData: ResumeEntry[] = [
     ],
     locationTime: ["May 2020 – August 2020", "Mountain View, CA"],
   },
-  // {
-  //   title: "Synchrony",
-  //   subtitle: "Hardware Engineering Intern",
-  //   description: [
-  //     "Built a specialized Merchant Terminal that utilizes data-over-sound to securely verify mobile payments.",
-  //     "Worked on firmware for the BCM2837 SoC to fulfil engineering requirements.",
-  //   ],
-  //   locationTime: ["May 2020 – August 2020", "Champaign, IL"],
-  // },
 ];

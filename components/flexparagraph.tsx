@@ -22,7 +22,6 @@ const FlexParagraph = ({
   } else if (isValidElement(flexParagraph)) {
     return <>{flexParagraph}</>;
   } else if (Array.isArray(flexParagraph) && flexParagraph.length > 0) {
-    // array, string or JSX.Element
     if (typeof flexParagraph[0] === "string") {
       return (
         <>

@@ -1,7 +1,12 @@
 {
   "name": "resume-next",
+  "description": "A multi-layout Next.js resume site for Shreyas Kishore.",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": "16.20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

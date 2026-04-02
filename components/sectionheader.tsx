@@ -1,5 +1,3 @@
-import styles from "../styles/knobs.module.scss";
-
 type SectionHeaderProps = {
   title: string;
   hr?: boolean;

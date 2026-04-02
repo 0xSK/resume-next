@@ -2,7 +2,6 @@ import type { ResumeEntry } from "../components/resumeentry";
 export const projectsData: ResumeEntry[] = [
   {
     title: "SIGCloud – ACM@UIUC",
-    // metaDescription: "Founder and Former Chair",
     description: [
       "Founded a student organization under ACM@UIUC to teach students how to leverage cloud technologies and DevOps for their projects.",
       "Focused on using platforms such as AWS, Google Cloud Platform, Microsoft Azure, DigitalOcean, CircleCI etc.",

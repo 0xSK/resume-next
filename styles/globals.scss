@@ -25,7 +25,6 @@ body {
 
 .contact {
   @apply font-sans font-medium text-base tracking-tight text-stone-700;
-  //   @apply h-12;
   .icon {
     @apply text-xs;
     &.left {
@@ -52,7 +51,6 @@ body {
     }
   }
   .section-content {
-    // @apply my-10;
     p {
       @apply my-0;
       &.title {

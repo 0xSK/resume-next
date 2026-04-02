@@ -1,4 +1,3 @@
-import styles from "../styles/knobs.module.scss";
 import type { ResumeEntry } from "./resumeentry";
 import FlexParagraph from "./flexparagraph";
 
@@ -17,8 +16,8 @@ const TwoColumnList = ({
     <div className={`section-content ${className}`} style={style}>
       <div className="two-column-grid">
         {entries.map((entry, index) => (
-          <>
-            <div key={index + "a"} className="col-span-1">
+          <div key={index} className="contents">
+            <div className="col-span-1">
               {entry.title &&
                 (typeof entry.title === "string" ? (
                   <p className="title">{entry.title}</p>
@@ -38,7 +37,7 @@ const TwoColumnList = ({
                 />
               )}
             </div>
-            <div key={index + "b"} className="col-span-1">
+            <div className="col-span-1">
               {entry.subtitle &&
                 (typeof entry.subtitle === "string" ? (
                   <p className="subtitle">{entry.subtitle}</p>
@@ -52,7 +51,7 @@ const TwoColumnList = ({
                 />
               )}
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>

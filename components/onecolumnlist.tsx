@@ -1,4 +1,3 @@
-import styles from "../styles/knobs.module.scss";
 import type { ResumeEntry } from "./resumeentry";
 import FlexParagraph from "./flexparagraph";
 

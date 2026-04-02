@@ -10,10 +10,6 @@ export const contactData: ContactEntry[] = [
     text: "linkedin.com/in/0xsk",
     icon: (
       <span className="fa-stack">
-        {/* <i className="fas fa-square fa-stack-2x fa-inverse" />
-        <i className="fab fa-linkedin fa-stack-2x" style={{
-            transform: "scale(0.9)",
-          }} /> */}
         <i className="fas fa-square fa-stack-2x" />
         <i
           className="fab fa-linkedin-in fa-stack-1x fa-inverse"
