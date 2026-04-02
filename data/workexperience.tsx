@@ -2,40 +2,63 @@ import { ResumeEntry } from "../components/resumeentry";
 
 export const workExperienceData: ResumeEntry[] = [
   {
+    title: "Ampere",
+    subtitle: "Senior RTL Methodology Engineer",
+    description: [
+      "Led development of a Python-based SoC generation framework that constructs high-level models of up to 512-core systems, integrating in-house and third-party IP into a unified software model.",
+      "Built a centralized metadata system capturing architectural and microarchitectural details, such as address maps, mesh coordinates, module parameterization, etc.",
+      "Implemented automated RTL generation producing 500K+ lines of lint-clean Verilog used in tapeout, eliminating manual integration effort.",
+      "Reduced RTL integration time by ~10×, replacing workflows that traditionally required 25+ engineers with a scalable, programmatic, and correct-by-construction approach.",
+      "Scaled the project from a solo effort to a 7-engineer team, expanding its scope to enable additional automation flows across design and verification teams.",
+    ],
+    locationTime: "Oct 2022 – Now",
+  },
+  {
+    title: "",
+    subtitle: "RTL Methodology Engineer",
+    description: [
+      "Worked on microarchitectural fixes across CPU and mesh interconnect components for timing and area closure.",
+      "Refactored several physical design flows and enabled push-button PPA estimation for RTL owners, significantly accelerating iteration speed and reducing dependency on physical design teams.",
+      "Created software workflows to automate analysis, improve debugging efficiency, and support A/B testing of microarchitectural changes.",
+    ],
+    locationTime: "",
+  },
+  {
     title: "Apple",
     subtitle: "Platform Architecture Intern",
     description: [
-      "Worked on driving trace-driven simulation from checkpoints collected from silicon.",
+      "Added checkpoint-based execution support for a C++ CPU simulator, enabling simulation from checkpoints collected from real silicon.",
+      "Reduced turnaround time for performance analysis and microarchitectural validation by eliminating the need for full workload simulation.",
+      "Extended simulator correctness to support JIT and self-modifying code by handling dynamic instruction updates within the trace pipeline",
     ],
     locationTime: "May 2021 – August 2021",
   },
-  {
-    title: "Synchrony",
-    subtitle: "UI/UX Design Intern",
-    description: [
-      "Worked on redesigning Synchrony's eService platform for credit card users.",
-      "Conducted user surveys and implemented a data-driven approach for design thinking.",
-    ],
-    locationTime: "August 2020 – May 2021",
-  },
+  // {
+  //   title: "Synchrony",
+  //   subtitle: "UI/UX Design Intern",
+  //   description: [
+  //     "Worked on redesigning Synchrony's eService platform for credit card users.",
+  //     "Conducted user surveys and implemented a data-driven approach for design thinking.",
+  //   ],
+  //   locationTime: "August 2020 – May 2021",
+  // },
   {
     title: "Apple",
     subtitle: "Silicon Validation Intern",
     description: [
-      "Developed a software framework that parses & visualizes SoC request-response traces, and provides a Python notebook interface for data-driven discovery and debugging.",
-      "Added high-level front-end components that parse advanced SoC scan-dump structures.",
+      "Created GUI tools that parse and visualize advanced SoC scan-dump traces for data-driven discovery and debugging.",
     ],
     locationTime: "May 2020 – August 2020",
   },
-  {
-    title: "Synchrony",
-    subtitle: "VUI Design Intern",
-    description: [
-      "Worked on redesigning Synchrony's Alexa Skill for the Amazon Store Card.",
-      "Conducted user interviews and implemented design changes based on the feedback.",
-    ],
-    locationTime: ["August 2019 – May 2020", "Champaign, IL"],
-  },
+  // {
+  //   title: "Synchrony",
+  //   subtitle: "VUI Design Intern",
+  //   description: [
+  //     "Worked on redesigning Synchrony's Alexa Skill for the Amazon Store Card.",
+  //     "Conducted user interviews and implemented design changes based on the feedback.",
+  //   ],
+  //   locationTime: ["August 2019 – May 2020", "Champaign, IL"],
+  // },
   {
     title: "Google",
     subtitle: "Software Engineering Intern",
@@ -45,13 +68,13 @@ export const workExperienceData: ResumeEntry[] = [
     ],
     locationTime: ["May 2020 – August 2020", "Mountain View, CA"],
   },
-  {
-    title: "Synchrony",
-    subtitle: "Hardware Engineering Intern",
-    description: [
-      "Built a specialized Merchant Terminal that utilizes data-over-sound to securely verify mobile payments.",
-      "Worked on firmware for the BCM2837 SoC to fulfil engineering requirements.",
-    ],
-    locationTime: ["May 2020 – August 2020", "Champaign, IL"],
-  },
+  // {
+  //   title: "Synchrony",
+  //   subtitle: "Hardware Engineering Intern",
+  //   description: [
+  //     "Built a specialized Merchant Terminal that utilizes data-over-sound to securely verify mobile payments.",
+  //     "Worked on firmware for the BCM2837 SoC to fulfil engineering requirements.",
+  //   ],
+  //   locationTime: ["May 2020 – August 2020", "Champaign, IL"],
+  // },
 ];

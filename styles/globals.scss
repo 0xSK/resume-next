@@ -13,8 +13,8 @@ body {
 }
 
 .name {
-  @apply font-header font-extrabold text-7xl tracking-tighter mt-16 text-black;
-  @apply underline underline-offset-[2.25px] decoration-[8px];
+  @apply font-header font-extrabold text-6xl tracking-tighter text-black;
+  @apply decoration-[8px];
   .middot {
     @apply font-normal;
   }

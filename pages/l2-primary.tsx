@@ -14,14 +14,16 @@ import { educationData } from "../data/education";
 const Home: NextPage = () => {
   return (
     <>
-      <div className="grid grid-cols-[2fr_1fr] gap-x-12">
+      <div className="grid grid-cols-[3fr_1fr] gap-x-12">
         <div className="col-span-1">
-          <Name />
+          <Name hindi />
         </div>
         <div className="col-span-1">
           <Contact className="h-12" align="right" />
         </div>
       </div>
+      <Skills type="OneColumn" />
+      <WorkExperience type="TwoColumn" />
       <div className="section">
         <SectionHeader title="education" hr={false} />
         <div className="section-content">
@@ -30,11 +32,7 @@ const Home: NextPage = () => {
           <OneColumnList entries={awardsData} /> */}
         </div>
       </div>
-      <WorkExperience type="TwoColumn" />
-      <div className="section break-before-page">
-        <Projects type="OneColumn" />
-        <Skills type="OneColumn" />
-      </div>
+      {/* <Projects type="OneColumn" /> */}
     </>
   );
 };
