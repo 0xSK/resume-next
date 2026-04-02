@@ -47,6 +47,7 @@ export const workExperienceData: ResumeEntry[] = [
     subtitle: "Silicon Validation Intern",
     description: [
       "Created GUI tools that parse and visualize advanced SoC scan-dump traces for data-driven discovery and debugging.",
+      "Enabled efficient root-cause analysis by identifying outliers in request-reponse trace data.",
     ],
     locationTime: ["May 2020 – August 2020", "Remote"]
   },
