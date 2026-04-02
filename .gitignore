@@ -11,6 +11,7 @@
 # next.js
 /.next/
 /out/
+**/.next/
 
 # production
 /build
@@ -18,6 +19,8 @@
 # misc
 .DS_Store
 *.pem
+**/node_modules/
+Resume 2023/.git/
 
 # debug
 npm-debug.log*

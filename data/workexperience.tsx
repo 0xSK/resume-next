@@ -13,7 +13,7 @@ export const workExperienceData: ResumeEntry[] = [
     title: "Synchrony",
     subtitle: "UI/UX Design Intern",
     description: [
-      "Worked on redesigning Synchonry's eService platform for credit card users.",
+      "Worked on redesigning Synchrony's eService platform for credit card users.",
       "Conducted user surveys and implemented a data-driven approach for design thinking.",
     ],
     locationTime: "August 2020 – May 2021",
@@ -29,9 +29,9 @@ export const workExperienceData: ResumeEntry[] = [
   },
   {
     title: "Synchrony",
-    subtitle: "VUI Design Project",
+    subtitle: "VUI Design Intern",
     description: [
-      "Worked on redesigning Synchonry's Alexa Skill for the Amazon Store Card.",
+      "Worked on redesigning Synchrony's Alexa Skill for the Amazon Store Card.",
       "Conducted user interviews and implemented design changes based on the feedback.",
     ],
     locationTime: ["August 2019 – May 2020", "Champaign, IL"],

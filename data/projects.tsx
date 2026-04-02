@@ -17,7 +17,7 @@ export const projectsData: ResumeEntry[] = [
   },
   {
     title: "Borland C++ for MacOS",
-    metaDescription: "145,000+ Users, 2,000+ Monthly Downloads",
+    metaDescription: ["2,000+ Monthly Downloads", "145,000+ Users"],
     description: [
       "Ported Borland's MS-DOS based C/C++ IDE to modern MacOS systems, with platform-specific optimization and custom keymaps.",
       "Used by high school students across India for computer science coursework.",
